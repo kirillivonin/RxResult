@@ -1,22 +1,27 @@
 PODS:
-  - Result (3.0.0)
-  - RxResult (1.0.2):
+  - Result (5.0.0)
+  - RxResult (2.2):
     - Result
-    - RxSwift (= 3.0.0-beta.1)
-  - RxSwift (3.0.0-beta.1)
+    - RxSwift (~> 4.0)
+  - RxSwift (4.5.0)
 
 DEPENDENCIES:
   - RxResult (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Result
+    - RxSwift
 
 EXTERNAL SOURCES:
   RxResult:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Result: 1b3e431f37cbcd3ad89c6aa9ab0ae55515fae3b6
-  RxResult: 54555008a738d38b88a772550f050506513189d5
-  RxSwift: 0823e8d7969c23bfa9ddfb2afa4881e424a1a710
+  Result: ed341d2f236af425b803e690e9bd8fd0a0cb7c5a
+  RxResult: d7966abc0b1e25a9e15040e2246d04ba8b0225e8
+  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
 
-PODFILE CHECKSUM: 02955c323288b4f1b7d5810ceae966ef43b84b07
+PODFILE CHECKSUM: 251a3f37222b3a575b94cf62e6297e95f479d297
 
-COCOAPODS: 1.1.0.rc.2
+COCOAPODS: 1.8.4

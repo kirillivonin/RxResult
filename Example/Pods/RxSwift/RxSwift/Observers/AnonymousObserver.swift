@@ -1,14 +1,12 @@
 //
 //  AnonymousObserver.swift
-//  Rx
+//  RxSwift
 //
 //  Created by Krunoslav Zaher on 2/8/15.
 //  Copyright © 2015 Krunoslav Zaher. All rights reserved.
 //
 
-import Foundation
-
-class AnonymousObserver<ElementType> : ObserverBase<ElementType> {
+final class AnonymousObserver<ElementType> : ObserverBase<ElementType> {
     typealias Element = ElementType
     
     typealias EventHandler = (Event<Element>) -> Void
@@ -17,18 +15,18 @@ class AnonymousObserver<ElementType> : ObserverBase<ElementType> {
     
     init(_ eventHandler: @escaping EventHandler) {
 #if TRACE_RESOURCES
-        let _ = AtomicIncrement(&resourceCount)
+        _ = Resources.incrementTotal()
 #endif
-        _eventHandler = eventHandler
+        self._eventHandler = eventHandler
     }
 
     override func onCore(_ event: Event<Element>) {
-        return _eventHandler(event)
+        return self._eventHandler(event)
     }
     
 #if TRACE_RESOURCES
     deinit {
-        let _ = AtomicDecrement(&resourceCount)
+        _ = Resources.decrementTotal()
     }
 #endif
 }
