@@ -17,12 +17,12 @@
   },
   "social_media_url": "https://twitter.com/ivanbruel",
   "platforms": {
-    "ios": "8.0"
+    "ios": "10.0"
   },
   "source_files": "RxResult/Classes/**/*",
   "dependencies": {
     "RxSwift": [
-      "~> 4.0"
+
     ],
     "Result": [
 

@@ -2,8 +2,8 @@ PODS:
   - Result (5.0.0)
   - RxResult (2.2):
     - Result
-    - RxSwift (~> 4.0)
-  - RxSwift (4.5.0)
+    - RxSwift
+  - RxSwift (5.0.1)
 
 DEPENDENCIES:
   - RxResult (from `../`)
@@ -19,8 +19,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Result: ed341d2f236af425b803e690e9bd8fd0a0cb7c5a
-  RxResult: d7966abc0b1e25a9e15040e2246d04ba8b0225e8
-  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+  RxResult: cc86d22018a408817e7e30b60ed29638ce792cbe
+  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
 
 PODFILE CHECKSUM: 251a3f37222b3a575b94cf62e6297e95f479d297
 
